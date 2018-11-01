@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <!--Thread class-->
+    <Button
+        android:id="@+id/btnThreads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onThreads"
+        android:text="Thread" />
+
+    <!--Runnables-->
+    <Button
+        android:id="@+id/btnRunnable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onRunnable"
+        android:text="Runnable (Start)" />
+
+    <Button
+        android:id="@+id/btnRunnableRun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onRunnable"
+        android:text="Runnable (Run)" />
+
+    <!--Asynctask-->
+    <Button
+        android:id="@+id/btnAsyncTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onAsyncTask"
+        android:text="Asynctask" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onEventHandler"
+        android:text="Start Event Handler" />
+
+</LinearLayout>
